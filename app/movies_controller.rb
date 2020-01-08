@@ -72,7 +72,7 @@ end
 def can_update_using_update_method
   # Update movie title to "Wat, huh?"
   Movie.create(title: "Wat?")
-  m = Movi.find_by(title: "Wat?")
+  m = Movie.find_by(title: "Wat?")
   m.update(title: "Wat, huh?")
 end
 
